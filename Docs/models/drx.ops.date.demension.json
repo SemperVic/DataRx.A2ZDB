@@ -1,0 +1,21 @@
+{
+	"UtsId": "",
+	"CalendarDate": "",
+	"CalendarYear": "",
+	"Quarter": "",
+	"QuarterDescription": "",
+	"CalendarMonth": "",
+	"MonthShortName": "",
+	"MonthLongName": "",
+	"WeekInMonth": "",
+	"WeekInYear": "",
+	"IsWeekend": "",
+	"IsWorkDay": "",
+	"DayOfMonth": "",
+	"DayOfYear": "",
+	"DayOfWeek": "",
+	"DayLongName": "",
+	"DayShortName": "",
+	"IsHoliday": "",
+	"HolidayName": ""
+}
