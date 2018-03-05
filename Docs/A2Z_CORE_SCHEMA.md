@@ -1,7 +1,7 @@
 # DataRx.A2ZDB Core Object Model Version 1.0.1
 
 ## A2Z Taxonomy Standard
-![A2Z Core Model rev 1.0.1](./diagrams/a2z.core.1.0.1.png.png?raw=true)
+![A2Z Core Model rev 1.0.1](DataRx.A2ZDB//diagrams/a2z.core.1.0.1.png.png?raw=true)
 ## CMS Taxonomy Standard
 ![Content Management Model rev 1.0.1](diagrams/cms.core.1.0.1.png.png?raw=true)
 ## COM Taxonomy Standard
