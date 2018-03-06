@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./offcanvas.css">
+    <title>A2ZDB Relational DB</title>
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">A2ZDB Docs</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html" style="margin-right: 10px;">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="objectModelOption" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core Object Models</a>
+                        <div class="dropdown-menu" aria-labelledby="objectModelOption">
+                            <a class="dropdown-item" href="./a2z.com.html">A2Z - Arizona Object State Model</a>
+                            <a class="dropdown-item" href="./a2z.com.html">COM - Community Object Model</a>
+                            <a class="dropdown-item" href="./a2z.cms.html">CMS - Content Management System Model</a>
+                            <a class="dropdown-item" href="./a2z.dev.html">DEV - DevOps Object Model</a>
+                            <a class="dropdown-item" href="./a2z.log.html">LOG - Logging &amp; Archive Model</a>
+                            <a class="dropdown-item" href="./a2z.mdr.html">MDR - Metadata Repository Model</a>
+                            <a class="dropdown-item" href="./a2z.ops.html">OPS - Operations &amp; Management Model</a>
+                        </div>
+                    </li>
+                    <li class="nav-item  dropdown">
+                        <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data Storage Options</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="./relational-db-support.html">Relational Data Storage</a>
+                            <a class="dropdown-item" href="./dimensional-db-support.html">Document Data Storage</a>
+                            <a class="dropdown-item" href="./data-storage-best-practice.html">Hybrid Data Storage</a>
+                        </div>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+    </nav>    
+    <main role="main">
+        <div class="nav-scroller bg-white box-shadow">        
+            <div class="container">
+                <div class="row">
+                    <nav class="nav nav-underline">
+                        <a class="nav-link active" href="./relational-db-support.html">Relational DB Support</a>
+                        <a class="nav-link" href="./dimensional-db-support.html">Dimensional DB Support</a>
+                        <a class="nav-link" href="./data-storage-best-practice.html">Hybrid DB Support</a>
+                        <a class="nav-link" href="//datarx.io">What Is Arizona?</a>
+                    </nav>
+                </div>    
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">A2Z Relational Database Support</h1>
+                <p>This documentation provides useful information about the relational databases A2ZDB supports</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Database Support</h4>
+                    <ul>
+                        <li>SQLite 3</li>
+                        <li>PostgreSQL 10.3</li>
+                        <li>MSSQL 2012</li>
+                        <li>MSSQL Express</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Abstract Data Factory Pattern</h4>
+                    <p>Arizona's runtime, persists data via a service layer definition that can be configured to 
+                    implement the database platform you prefer by defining the DBFactory option. If no factory is 
+                    declared, Arizona will assume default connections to an internal SQLite3 database.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Call Stack Architecture</h4>
+                    <p>The A2Z data model is first and foremost designed from an enterprise perspective that is a holistic top-down logical model. 
+                        What this means is the model is designed to satisfy identifiable and predictable "Real World" modelling patterns.                    
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+          
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+    $(function () {
+        'use strict'
+        $('[data-toggle="offcanvas"]').on('click', function () {
+            $('.offcanvas-collapse').toggleClass('open')
+        })
+    })
+    </script>
+
+</body>
+</html>

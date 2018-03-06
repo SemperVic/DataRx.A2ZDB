@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./offcanvas.css">
+    <title>A2ZDB.CMS</title>
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">A2ZDB Docs</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html" style="margin-right: 10px;">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item  active dropdown">
+                        <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="objectModelOption" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core Object Models</a>
+                        <div class="dropdown-menu" aria-labelledby="objectModelOption">
+                            <a class="dropdown-item" href="./a2z.html">A2Z - Arizona Object State Model</a>
+                            <a class="dropdown-item" href="./a2z.com.html">COM - Community Object Model</a>
+                            <a class="dropdown-item" href="./a2z.cms.html">CMS - Content Management System Model</a>
+                            <a class="dropdown-item" href="./a2z.dev.html">DEV - DevOps Object Model</a>
+                            <a class="dropdown-item" href="./a2z.log.html">LOG - Logging &amp; Archive Model</a>
+                            <a class="dropdown-item" href="./a2z.mdr.html">MDR - Metadata Repository Model</a>
+                            <a class="dropdown-item" href="./a2z.ops.html">OPS - Operations &amp; Management Model</a>
+                        </div>
+                    </li>
+                    <li class="nav-item  dropdown">
+                        <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data Storage Options</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="./relational-db-support.html">Relational Data Storage</a>
+                            <a class="dropdown-item" href="./dimensional-db-support.html">Document Data Storage</a>
+                            <a class="dropdown-item" href="./data-storage-best-practice.html">Hybrid Data Storage</a>
+                        </div>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+    </nav>
+
+    <div class="nav-scroller bg-white box-shadow">
+        
+        <div class="container">
+            <div class="row">
+                <nav class="nav nav-underline">
+                    <a class="nav-link" href="./a2z.html">A2Z</a>
+                    <a class="nav-link active" href="./a2z.cms.html">CMS</a>
+                    <a class="nav-link" href="./a2z.com.html">COM</a>
+                    <a class="nav-link" href="./a2z.dev.html">DEV</a>
+                    <a class="nav-link" href="./a2z.eav.html">EAV</a>
+                    <a class="nav-link" href="./a2z.geo.html">GEO</a>
+                    <a class="nav-link" href="./a2z.log.html">LOG</a>
+                    <a class="nav-link" href="./a2z.mdr.html">MDR</a>
+                    <a class="nav-link" href="./a2z.ops.html">OPS</a>
+                </nav>
+            </div>
+            
+        </div>
+    </div>
+    
+    <main role="main">
+        <div class="jumbotron">
+            <div class="container">
+                <h1>CMS: Content Management System Object Model</h1>
+                <p>This documentation provides the standard core taxonomy for the Content Mgmt System Object Model.</p>
+                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis iaculis massa, quis 
+                        finibus turpis accumsan sit amet. Vivamus nisi enim, scelerisque id velit vel, auctor sodales 
+                        diam. Donec eros tellus, scelerisque et venenatis eget, malesuada ut urna. Curabitur auctor ut 
+                        urna in pharetra. Cras non dolor nunc. Vivamus finibus, ipsum nec sodales luctus, nibh odio 
+                        luctus nisi, ac volutpat nisi urna eu magna. Curabitur viverra laoreet mattis. Vivamus molestie 
+                        consequat enim, sit amet ullamcorper purus congue non.</small>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">                                
+                <div class="col-md-5">
+                    <h4>Integration Definition</h4>
+                    <ul>
+                        <li><b style="color: #555555;">Content Metadata Repository</b></li>
+                        <ul>
+                            <li><a href="#">MDR_CONTENT</a></li>
+                        </ul>
+                        <li style="margin-top: 15px;"><b style="color: #555555;">Content Mgmt Object Model</b></li>
+                        <ul>
+                            <li><a href="#">CMS_CONTAINER</a></li>
+                            <ul>
+                                <li><a href="#">CMS_CONTENT</a></li>
+                                <ul>
+                                    <li><a href="#">CMS_CONTENT_SOCIAL</a></li>
+                                    <li><a href="#">CMS_PERFORMANCE_KEYS</a></li>
+                                    <li><a href="#">CMS_FILE_SYSTEM</a></li>
+                                    <li><a href="#">CMS_OBJECT_NOTATION</a></li>
+                                </ul>                                
+                            </ul>
+                        </ul>                        
+                    </ul>
+                    <h4>Related Definitions</h4>
+                    <ul>
+                        <li style="margin-top: 15px;"><b style="color: #555555;">Metadata Taxonomy Definitions</b></li>
+                        <ul>
+                            <li><a href="#">Container Entity Taxonomy</a></li>
+                            <li><a href="#">Content Entity Taxonomy</a></li>
+                            <li><a href="#">Content Social Entity Taxonomy</a></li>
+                            <li><a href="#">Content Key Performance Taxonomy</a></li>
+                            <li><a href="#">Content File System Txonomy</a></li>
+                            <li><a href="#">Object Notation Entity Taxonomy</a></li>
+                        </ul>
+                        <li style="margin-top: 15px;"><b style="color: #555555;">Additional Resources</b></li>
+                        <ul>
+                            <li><a href="#">A2Z InDef Standardization</a></li>
+                            <li><a href="#">A2Z Naming Conventions</a></li>
+                            <li><a href="#">A2Z Data Modeling Conventions</a></li>
+                        </ul>
+                    </ul>
+                    
+                </div>
+                <div class="col-md-7" style="border-left: 1px solid #ddd;">
+                    <h4>CMS Taxonomy Namespace</h4>
+                    <img src="./diagrams/cms.core.1.0.1.png" style="width: 100%;" />
+                    <small class="text-muted">Revision 1.0.1 (Alpha)</small>
+                </div>
+            </div>
+        </div>
+    </main>
+
+              
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+    $(function () {
+        'use strict'
+        $('[data-toggle="offcanvas"]').on('click', function () {
+            $('.offcanvas-collapse').toggleClass('open')
+        })
+    })
+    </script>
+
+</body>
+</html>
