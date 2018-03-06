@@ -12,60 +12,39 @@
 
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">A2ZDB Docs</a>
+            <a class="navbar-brand" href="./index.html">A2ZDB Docs</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarsExample07">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" style="margin-right: 10px;">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./index.html" style="margin-right: 10px;">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="objectModelOption" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core Object Models</a>
                         <div class="dropdown-menu" aria-labelledby="objectModelOption">
-                            <a class="dropdown-item" href="#">A2Z - Arizona Object State Model</a>
-                            <a class="dropdown-item" href="#">COM - Community Object Model</a>
-                            <a class="dropdown-item" href="#">CMS - Content Management System Model</a>
-                            <a class="dropdown-item" href="#">DEV - DevOps Object Model</a>
-                            <a class="dropdown-item" href="#">LOG - Logging &amp; Archive Model</a>
-                            <a class="dropdown-item" href="#">MDR - Metadata Repository Model</a>
-                            <a class="dropdown-item" href="#">OPS - Operations &amp; Management Model</a>
+                            <a class="dropdown-item" href="./a2z.html">A2Z - Arizona Object State Model</a>
+                            <a class="dropdown-item" href="./a2z.com.html">COM - Community Object Model</a>
+                            <a class="dropdown-item" href="./a2z.cms.html">CMS - Content Management System Model</a>
+                            <a class="dropdown-item" href="./a2z.dev.html">DEV - DevOps Object Model</a>
+                            <a class="dropdown-item" href="./a2z.log.html">LOG - Logging &amp; Archive Model</a>
+                            <a class="dropdown-item" href="./a2z.mdr.html">MDR - Metadata Repository Model</a>
+                            <a class="dropdown-item" href="./a2z.ops.html">OPS - Operations &amp; Management Model</a>
                         </div>
                     </li>
                     <li class="nav-item  dropdown">
                         <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data Storage Options</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="#">Relational Data Storage</a>
-                            <a class="dropdown-item" href="#">Document Data Storage</a>
-                            <a class="dropdown-item" href="#">Hybrid Data Storage</a>
+                            <a class="dropdown-item" href="./relational-db-support.html">Relational Data Storage</a>
+                            <a class="dropdown-item" href="./dimensional-db-support.html">Document Data Storage</a>
+                            <a class="dropdown-item" href="./data-storage-best-practice.html">Hybrid Data Storage</a>
                         </div>
                     </li>
                 </ul>            
             </div>
         </div>
-    </nav>
-
-    <div class="nav-scroller bg-white box-shadow">
-        
-        <div class="container">
-            <div class="row">
-                <nav class="nav nav-underline">
-                    <a class="nav-link active" href="#">Additional Nav</a>
-                    <a class="nav-link" href="#">Friends <span class="badge badge-pill bg-light align-text-bottom">27</span></a>
-                    <a class="nav-link" href="#">Explore</a>
-                    <a class="nav-link" href="#">Suggestions</a>
-                    <a class="nav-link" href="#">Link</a>
-                    <a class="nav-link" href="#">Link</a>
-                    <a class="nav-link" href="#">Link</a>
-                    <a class="nav-link" href="#">Link</a>
-                    <a class="nav-link" href="#">Link</a>
-                </nav>
-            </div>
-            
-        </div>
-    </div>
-    
+    </nav>    
     <main role="main">
         <div class="jumbotron">
             <div class="container">
@@ -78,31 +57,35 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                <h2>Introducing IDEF1X</h2>
-                <p>Integration DEFinition for information modeling (IDEF1X) is a data modeling language 
-                for the development of semantic data models. IDEF1X is used to produce a graphical 
-                information model which represents the structure and semantics of information within an 
-                environment or system.</p>
-                <p><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/IDEF1X" role="button" target="_blank">Learn More &raquo;</a></p>
+                    <h2>Introducing IDEF1X</h2>
+                    <p>Integration DEFinition for information modeling (IDEF1X) is a data modeling language 
+                    for the development of semantic data models. IDEF1X is used to produce a graphical 
+                    information model which represents the structure and semantics of information within an 
+                    environment or system.</p>
                 </div>
                 <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <h2>Data Storage Options</h2>
+                    <p>A2ZDB supports both relational and/or dimensional storage strategies.</p>
+                    <ul>
+                        <li>MS SQL, MS SQL Express, SQLite 3, PostgreSQL, MySQL</li>
+                        <li>Mongo DB, CouchDB</li>
+                    </ul>
                 </div>
                 <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <h2>Taxonomy Namespace</h2>
+                    <p>The A2Z data model is first and foremost designed from an enterprise perspective that is a holistic top-down logical model. 
+                    What this means is the model is designed to satisfy identifiable and predictable "Real World" modelling patterns.</p>
                 </div>
+            </div>
+            <div class="row">
+                <p class="col-md-4"><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/IDEF1X" role="button" target="_blank">Learn More</a></p>
+                <p class="col-md-4"><a class="btn btn-secondary" href="./data-storage-best-practice.html" role="button">Learn More</a></p>
+                <p class="col-md-4"><a class="btn btn-secondary" href="#" role="button">Learn More</a></p>
             </div>
         </div>
     </main>
 
-    <footer class="container">
-    <p>//DataRx.IO</p>
-    </footer>
-          
+   
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
