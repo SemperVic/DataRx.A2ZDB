@@ -46,17 +46,135 @@
         </div>
     </nav>    
     <main role="main">
-        <div class="jumbotron">
+        <div class="nav-scroller bg-white box-shadow">        
             <div class="container">
-                <h1>A2ZDB Taxonomy Basics</h1>
-                <p>This documentation provides core integration definitions for a2zdb's information modeling (IDEF1X) standards</p>
+                <div class="row">
+                    <nav class="nav nav-underline">
+                        <a class="nav-link active" href="./taxonomy.html">Basic Taxonomy Modeling</a>
+                        <a class="nav-link" href="//datarx.io">IDEF1X Standards</a>
+                        <a class="nav-link" href="//datarx.io">Naming Conventions</a>
+                        <a class="nav-link" href="./on_metadata.html">About Metadata</a>
+                        <a class="nav-link" href="./data-storage-best-practice.html">EAV Modeling</a>
+                        <a class="nav-link" href="//datarx.io">Semantic Object Modeling</a>
+                    </nav>
+                </div>    
             </div>
+        </div>
+        <div class="container" style="max-height: 150px; overflow: hidden; margin-bottom: 25px; border-bottom: 1px solid #ddd;">
+            <img src="./assets/tax-bg.png" style="width: 100%;" />
         </div>
         
         <div class="container">
-            Coming Soon
+            <h3>A2ZDB Basic Taxonomy Modeling</h3>
+            <p>The A2Z object model is first and foremost designed from an enterprise perspective that is a holistic top-down logical model. 
+            What this means is the model is created in an abstract manner using taxonomy namespaces to isolate and partition a variety of schemas. 
+            Accordingly, a specific application may not implement all the entities in a physical model.</p>
+        </div>
+        <div class="container">
+            <h4>Modeling Overview</h4>
+            <p>A2ZDB is different than a traditional "View Integration Model" or bottom-up relational model in a variety of ways. Most notable is the 
+            vast and growing business computing taxonomy infrastructure combined with managed metadata repository dependencies that allows the A2Z 
+            object model to be very maliable with extremely flexible definition integration patterns that can be predictably asserted. What this 
+            ultimately means is, refactoring storage structure (adding a table or a new column) of your business data becomes a very rare event in 
+            feature driven development. Originally - the A2ZDB consisted of 23 EAV Tables, that was almost 20 years ago. Today, the core database 
+            architecture requires less than 50 tables. Less than 100% growth in tables in 20 years says something toward the legitamcy of flexibility 
+            in this model.</p>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Top-Down Object Model</h4>
+                    <img src="./assets/origin-of-all-models.png" style="width: 100%;" />
+                </div>
+                <div class="col">
+                    <h4>Father of All Object Models</h4>
+                    <ul style="margin-top: 25px;">
+                        <li>Everything is an "ENTITY"</li>
+                        <li>All "ENTITY" data has a "TYPE_OF_ENTITY"</li>
+                        <li>An "ENTITY" can have a "RELATIONSHIP" with another "ENTITY"</li>
+                        <li>All "RELATIONSHIPS" have a "TYPE_OF_RELATIONSHIP"</li>
+                        <li>An "ENTITY" can have one or more "ATTRIBUTES"</li>
+                        <li>An "ATTRIBUTE" has a "TYPE_OF_ATTRIBUTE"</li>
+                        <li>An "ATTRIBUTE" can have one or more "DATA_VALUES"</li>
+                    </ul>
+                    <small style="padding-left: 25px;">Reference: <a href="#">EAV Modeling</a></small>
+                </div>
+            </div>
+
+            <p>A2ZDB makes maximum use of effeciency and performance when designing a taxonomy namespace. Great care is given toward properly identifying 
+            the nature of not just the data being stored, but also the relationships within a domain of discourse this model facilitates. Decades of effort 
+            has made this model quite complete in it's core form. More over, it is my experience once developers learn and undertsand this holistic approach, 
+            they prefer developing under EAV based Semantic models over "View Integration Models". After getting used to develolping under an A2Z taxonomy, 
+            you will quickly realize how quickley you can prototype the ground work for your next software project. After your understanding of Arizona and 
+            the A2Z modeling strategy has matured, you will start to realize you model much less and your development effort begins at cunsumption of the 
+            appropriate taxonomy. When properly implemented, you will be in a "sweet spot" position where your sustainability is greatly increased and 
+            your development effort is more focused toward feature enhancements via API libraries and existing taxonomies. In essence, You are no longer writing 
+            programs but assembling API's and connecting them to user interfaces with complete separation of concern between the variety of tiers found in modern 
+            web tier containers.</p>
+
+            <div class="row">
+                <div class="col">
+                    <h4>View Integration Model</h4>
+                    <ul style="margin-top: 25px;">
+                        <li>Everything is an "ENTITY"</li>
+                        <li>All "ENTITY" data has a "TYPE_OF_ENTITY"</li>
+                        <li>An "ENTITY" can have a "RELATIONSHIP" with another "ENTITY"</li>
+                        <li>All "RELATIONSHIPS" have a "TYPE_OF_RELATIONSHIP"</li>
+                        <li>An "ENTITY" can have one or more "ATTRIBUTES"</li>
+                        <li>An "ATTRIBUTE" has a "TYPE_OF_ATTRIBUTE"</li>
+                        <li>An "ATTRIBUTE" can have one or more "DATA_VALUES"</li>
+                    </ul>
+                    <small style="padding-left: 25px;">Reference: <a href="#">EAV Modeling</a></small>
+                </div>
+                <div class="col">
+                    <h4>Bottom-Up Object Model</h4>
+                    <img src="./assets/origin-of-all-models.png" style="width: 100%;" />
+                </div>
+            </div>
+            
+            
+            <p>toward supporting the data you need to store without creating 
+            new mechanisms to store this data on disk. Because we use metadata to describe relationships with other taxonomy namespaces, data is 
+            not structured and stored in accordance with some market/project driven requirements. Instead, the Entities and Attributes that make 
+            up a storage container are modeled after the "Real World". While marketing and project requirements ultimately rule the day in 
+            typical DevOps cycles. The goal of A2Z's top-down model approach is designed not to restrict how you choose to describe an object 
+            within a managed framework using existing source code and runtime.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>Top-Down Object Model</h4>
+                    <img src="./assets/origin-of-all-models.png" style="width: 100%;" />
+                </div>
+                <div class="col">
+                    <h4>Father of All Object Models</h4>
+                    <ul style="margin-top: 25px;">
+                        <li>Everything is an "ENTITY"</li>
+                        <li>All "ENTITY" data has a "TYPE_OF_ENTITY"</li>
+                        <li>An "ENTITY" can have a "RELATIONSHIP" with another "ENTITY"</li>
+                        <li>All "RELATIONSHIPS" have a "TYPE_OF_RELATIONSHIP"</li>
+                        <li>An "ENTITY" can have one or more "ATTRIBUTES"</li>
+                        <li>An "ATTRIBUTE" has a "TYPE_OF_ATTRIBUTE"</li>
+                        <li>An "ATTRIBUTE" can have one or more "DATA_VALUES"</li>
+                    </ul>
+                    <small style="padding-left: 25px;">Reference: <a href="#">EAV Modeling</a></small>
+                </div>
+            </div>
+            
         </div>
     </main>
+    <div class="col">
+            <b>Bottom-Up Object Model</b>
+            <p>View Integration Model</p>
+            <figure>Example Relational Object Model</figure>
+        </div>
+    <p>This data representation is analogous to space-efficient methods of storing a sparse matrix, where only non-empty values are 
+    stored. In an EAV data model, each attribute-value pair is a fact describing an entity referred to as a "ENTITY" in the above 
+    diagram, and a row in an EAV table stores a single fact. The benifit of this model is this technique makes it easy to store any 
+    sparse matrix or composite object to the model maximizing code reuse. The con of this strategy is that it requires you to manage 
+    relationships via metadata in-place of a database constraint as is the case in a bottom-up model. Ultimately this creates an 
+    abstract nature to the naming convention and normalization techniques combined with relationals forms compareds to a constrained 
+    relational object model as typically demonstratred with view integration models.</p>
+    <p>EAV tables are often described as "long and skinny": "long" refers to the number of rows, "skinny" to the few columns.</p>
 
    
     
