@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./offcanvas.css">
+    <title>A2Z Object Modeling</title>
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">A2ZDB Docs</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html" style="margin-right: 10px;">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Getting Started</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="./modeling-principles.html">Object Modeling</a>
+                            <a class="dropdown-item" href="./integration-definition.html">Integration Definition Defined</a>
+                            <a class="dropdown-item" href="./naming-conventions.html">Naming Conventions</a>
+                            <a class="dropdown-item" href="./eav-modeling.html">EAV Modeling</a>
+                            <a class="dropdown-item" href="./about-metadata.html">About Metadata</a>
+                            <a class="dropdown-item" href="./semantic-modeling.html">Semantic Modeling</a>                            
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="objectModelOption" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core Object Models</a>
+                        <div class="dropdown-menu" aria-labelledby="objectModelOption">
+                            <a class="dropdown-item" href="./a2z.html">A2Z - Arizona Object State Model</a>
+                            <a class="dropdown-item" href="./a2z.com.html">COM - Community Object Model</a>
+                            <a class="dropdown-item" href="./a2z.cms.html">CMS - Content Management System Model</a>
+                            <a class="dropdown-item" href="./a2z.dev.html">DEV - DevOps Object Model</a>
+                            <a class="dropdown-item" href="./a2z.log.html">LOG - Logging &amp; Archive Model</a>
+                            <a class="dropdown-item" href="./a2z.mdr.html">MDR - Metadata Repository Model</a>
+                            <a class="dropdown-item" href="./a2z.ops.html">OPS - Operations &amp; Management Model</a>
+                        </div>
+                    </li>
+                    <li class="nav-item  dropdown">
+                        <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="platform-support" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data Storage Options</a>
+                        <div class="dropdown-menu" aria-labelledby="platform-support">
+                            <a class="dropdown-item" href="./relational-db-support.html">Relational Data Storage</a>
+                            <a class="dropdown-item" href="./dimensional-db-support.html">Document Data Storage</a>
+                            <a class="dropdown-item" href="./data-storage-best-practice.html">Hybrid Data Storage</a>
+                        </div>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+    </nav>    
+    <main role="main">
+        <div class="nav-scroller bg-white box-shadow">        
+            <div class="container">
+                <div class="row">
+                    <nav class="nav nav-underline">
+                        <a class="nav-link active" href="./modeling-principles.html">Object Modeling</a>
+                        <a class="nav-link" href="./integration-definition.html">Integration Definition</a>
+                        <a class="nav-link" href="./naming-conventions.html">Naming Conventions</a>                        
+                        <a class="nav-link" href="./eav-modeling.html">EAV Modeling</a>
+                        <a class="nav-link" href="./about-metadata.html">About Metadata</a>
+                        <a class="nav-link" href="./semantic-modeling.html">Semantic Modeling</a>
+                    </nav>
+                </div>    
+            </div>
+        </div>
+               
+        <div class="container" style="margin-top: 25px;">
+            <h3>A2ZDB Object Modeling Principles</h3>
+            <p>The A2Z object model is first and foremost designed from an enterprise perspective that can be described as 
+            a holistic top-down logical model commonly refered to as <i>Entity Attribute Value</i> or EAV model. What this means is the 
+            model is created in a more abstract manner than one would likely see with a traditional <i>View Integration Model</i>. As a 
+            result, it allows you to sustain your data taxonomy from a holistic perspective that will provide maximum scalability and 
+            effeciency into your problem domain through natural software accreation and data federation.</p>
+
+            <p>The benefit of using this top-down approach is how well the model itself flexes toward your domain of interest without 
+            the need for refactoring callstacks into data storage mediums because a column, table, property or new document was added 
+            or changed. We have all experienced this problem one time or another. The reason this benefit can be realized is because 
+            the physical objects and attributes that transport the data do not describe the data the same way one might find in 
+            traditional <i>View Integration Models</i>. 
+            
+            <p>The following example illustrates this EAV principle at it's core.</p>
+            <div class="row" style="margin-bottom: 15px;">
+                <div class="col">
+                    <h4>Top-Down Logical Model</h4>
+                    <img src="./assets/origin-of-all-models.png" style="width: 100%;" />
+                    <small class="muted">Figure 1.1 IDEF ER Diagram</small>
+                </div>
+                <div class="col">
+                    <h4>EAV: Father of All Object Models</h4>
+                    <ul style="margin-top: 25px;">
+                        <li>Everything is an "ENTITY"</li>
+                        <li>All "ENTITY" data has an "ENTITY_TYPE"</li>
+                        <li>An "ENTITY" can have a "RELATIONSHIP" with another "ENTITY"</li>
+                        <li>All "RELATIONSHIPS" have a "RELATIONSHIP_TYPE"</li>
+                        <li>An "ENTITY" can have one or more "ATTRIBUTES"</li>
+                        <li>An "ATTRIBUTE" has an "ATTRIBUTE_TYPE"</li>
+                        <li>An "ATTRIBUTE" can have one or more "ATTRIBUTE_VALUES"</li>
+                    </ul>
+                    <small style="padding-left: 25px;">Reference: <a href="#">EAV Modeling</a> for a broader understanding</small>
+                </div>
+            </div>
+            <p>The above logical model representation is analogous to space-efficient methods of storing a sparse matrix, where only 
+            non-empty values are stored. In an EAV data model, each attribute-value pair is a fact describing an object referred to as 
+            an "ENTITY" in the above diagram, and a row in an EAV entity stores a single fact. The benifit of this model is this technique 
+            makes it easy to store any sparse matrix or composite object to the model maximizing code reuse. Another benift this technique 
+            provides is the ability to identify trending data sets.</p>
+            <p>Conversely, this strategy requires you to manage relationships via standardized taxonomy and metadata repositories in-lieu 
+            of traditional relational constraints as is the case in a bottom-up model. Ultimately this top-down EAV modeling strategy inherits 
+            an abstract nature to the naming convention and normalization techniques. This, combined with logical relational forms compared 
+            to a constrained relational object model as typically demonstratred with view integration models.</p>
+        </div>
+
+        <div class="container" style="margin-top: 25px;">
+            <h3>Characteristics of a View Integration Model</h3>
+            <p>A2ZDB is different than a traditional "View Integration Model" or bottom-up relational model in a variety of ways. Most notable 
+            is the difference in how entities and attributes are described in relation to the data these entities contain.</p>
+            <div class="row">
+                <div class="col">
+                    <h4>Bottom-Up Object Model</h4>
+                    <img src="./assets/view-integration-model.png" style="width: 100%;" />
+                    <small class="muted">Figure 1.2 IDEF ER Diagram</small>
+                </div>
+                <div class="col">
+                    <h4>View Integration Model</h4>
+                    <ul style="margin-top: 25px;">
+                        <li>Traditionally, the model's Tables and Columns describe themselves </li>
+                        <li>This same pattern exists with dimensional documents and properties. Technology and platform is irrelavant at this stage</li>
+                        <li>View models are traditionally highly constrained in favor project requirements and application fetures making it a real challenge to maintain parity with an enterprise vision.</li>
+                        <li>Susceptible to disparity due to re-engineering efforts</li>
+                        <li>Change management can have a cascading effect on API call stacks as well as user interface &amp; experience. This is commonly seen when the effort to integrate a feature is greater than the feature being integrated.</li>
+                        <li>DevOps sustainability can be greatly impacted over a life of your data's storage architecture</li>
+                    </ul>                    
+                </div>                
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 25px;">
+            <h3>Finding Balance</h3>
+            <p>In looking at the two model's illustrated above. Theoretically, One could store the information from the View Integration 
+            Model into the top-down EAV model but the process would require an abstract layer of recursion. This is not the sweet spot you 
+            want to perform development operations. Obviously this would not only require a lot development cycles, but would be complicated 
+            to change. Accordingly, a great deal of effort has gone into striving to find that balance between an EAV semantic model and a 
+            view integration model for maximum sustainablity, usability, scalability and performance. This unification between the traditional 
+            view model and and holistic enterprise model is what A2ZDB strives to meet through what is refered to as a consolidated EAV 
+            integration model. You will learn more about these concrete models when you learn about the <a href="#">Core Object Models</a></p>
+
+            <p>Before continuing any further, It is important to point out a few basic premises regarding object modeling.</p>
+            <ul>
+                <li>There is no wrong way to model and right way to model per se. If your model returns accurate information, you did it right. If your model returns in-accurate information, this would suggest something was missed and could be very costly in the business decision making processes.</li>
+                <li>Varying degrees of EAV modeling does occur in view integration models and these efforts increase the sustainability of project's life span</li>
+                <li>Over time, if not properly planned, manged and maintained. A bottom up model can contain a variety of constraints, columns and relationships that get lost in translation as people and process are updated and replaced. These properties are usually ignored by developers for fear of regression.</li>
+                <li>Finally, the <i>View Integration Model</i> pattern can be difficult to abondoned due to conditioning, training and past project experiences. In fact, It can be so difficult, that the A2Z 
+                modeling principles do not completely abondon the concept.</li>
+            </ul>
+            
+            <p>A2ZDB makes maximum use of effeciency and performance when designing a taxonomy namespace. Great care is given toward 
+            properly identifying the nature of not just the data being stored, but also the relationships within a domain of discourse 
+            this model facilitates and how it matches up to other kinds of data that have simalar attributes and characteristics.</p>
+
+            <p>Ultimately the differences between these two methods of modeling is a red pill/blue pill argument. If you are considering 
+            changing the way you isolate, partition and manage your enterprise data. The A2ZDB will provide you a tremendous springboard 
+            toward accomplishing your efforts.</p>
+
+            <h3>History of this Model</h3>
+            <p>Decades of effort has made this model quite complete in it's core form. More over, it is my experience 
+            once developers learn and undertsand this holistic approach, they prefer developing under EAV based Semantic models over 
+            "View Integration Models". The reason for this is because it is faster and easier to develop against and provides greater 
+            opportunities for code reuse.</p>
+            <p>In addition to the physical characteristics of the model's themselves, decades of effort has gone into defining the metadata 
+            taxonomy that describes your valuable data assets. While this project is new, the defined and developed taxonomy is a mature, vast 
+            and growing <i>business computing</i> semantic and taxonomy infrastructure. This combined with managed metadata repository dependencies 
+            that allows the A2ZDB w/Arizona's architecture to stretch it's legs in both development and production environments. What this 
+            ultimately means is, refactoring storage structure (adding a table or a new column) for your business data becomes a very rare event 
+            in feature driven development. Originally - the A2ZDB consisted of 23 EAV Tables, that was almost 20 years ago. Today, the core 
+            database and composite architecture requires less than 50 tables. Less than 100% growth in entities in 20 years says something 
+            toward the legitamcy of flexibility this model has to offer. We understand this history is important in your decision making process. 
+            For additional historical information <a href="#">Click here</a>
+        </p>        
+        </div>
+        <div class="container" style="margin-top: 25px; margin-bottom: 20px;">
+            <div class="row">
+                <div class="col"><!--<a href="#" class="btn btn-outline-secondary" type="button">Prev: Home</a>--></div>
+                <div class="col"><a href="./integration-definition.html" class="btn btn-outline-secondary float-right" type="button">Next Topic: Integration Definition &raquo;</a></div>
+            </div>
+        </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+    $(function () {
+        'use strict'
+        $('[data-toggle="offcanvas"]').on('click', function () {
+            $('.offcanvas-collapse').toggleClass('open')
+        })
+    })
+    </script>
+
+</body>
+</html>
