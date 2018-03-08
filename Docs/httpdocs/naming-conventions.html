@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-    <link rel="stylesheet" href="./bootstrap.min.css">
-    <link rel="stylesheet" href="./offcanvas.css">
+    <link rel="stylesheet" href="./assets/style/sandstone.bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/custom.styles.css">
     <title>A2ZDB Naming Conventions</title>
 </head>
 <body class="bg-light">
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="./index.html">A2ZDB Docs</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,7 +93,7 @@
 
             <h4>Singular Naming Standard</h4>
             <p>When naming entities and in most all cases when naming attributes, a plural form should NEVER be used. It should be 
-            clear and understood that when we are viewing a model - we view it from the context of unique isolation of data. While 
+            clear and understood that when we are viewing a model - we view it from the context of uniquely isolated sets of data. While 
             it is true - many entities will return collections or rows of information. Each of these rows can be uniquely identified 
             and transactions occur in this level of isolation. Cardinality is the nature of this industry but should not be the 
             nature of your object model. Accordingly, when modeling, one should always view the design from  the perspective of a 
@@ -119,10 +119,10 @@
             <h4>Entity and Attribute Keywords</h4>
             <p>What many developers recognize as a table, class or document is referred to as an Entity in IDEF1X. Likewise, a 
             column, property or accessor is referred to as an Attribute. An Entity is a representation of a class of real or 
-            abstract things (people, objects, places, events, ideas, or a combination of things (composite object) that are 
-            recognized as instances of the same class because they share the same characteristics and can participate in the 
-            same relationships. An Attribute is a property or characteristic that is common to some or all of the instances of 
-            an entity. An attribute represents the use of a domain in the context of an entity.</p>
+            abstract things (people, objects, places, events, ideas, or a composite objects that are  recognized as instances 
+            of the same class because they share the same characteristics and can participate in the same relationships. 
+            An Attribute is a property or characteristic that is common to some or all of the instances of an entity. An 
+            attribute represents the use of a domain in the context of an entity.</p>
 
             <h4>Other Important Keywords</h4>
             <p>Understanding the database naming convention requires you to have an understanding of certain keywords that are used to 
@@ -131,9 +131,9 @@
             <div class="row">
                 <div class="col">
                     <p class="lead">Entity Keywords</p>
-                    <p>All entity objects are prefixed with a keyword that identifies the taxonomy schema discussed 
+                    <p>All entity objects are prefixed with a keyword that identifies the conceptual schema as discussed 
                     in the Object Modeling document. The purpose of this prefix is to easily identify a collection of entities that are 
-                    related to one another in any given context called a taxonomy schema. While this separation of concern helps understand 
+                    related to one another in any given context called a taxonomy schema. While this separation of concern helps you understand 
                     the object model as a whole. It should be understood that it is natural for relationships to exist between taxonomy schemas.</p>
                 </div>
                 <div class="col">

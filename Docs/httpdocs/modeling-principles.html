@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-    <link rel="stylesheet" href="./bootstrap.min.css">
-    <link rel="stylesheet" href="./offcanvas.css">
+    <link rel="stylesheet" href="./assets/style/sandstone.bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/custom.styles.css">
     <title>A2Z Object Modeling</title>
 </head>
-<body class="bg-light">
+<body>
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="./index.html">A2ZDB Docs</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,11 +74,12 @@
                
         <div class="container" style="margin-top: 25px;">
             <h3>A2ZDB Object Modeling Principles</h3>
-            <p>The A2Z object model is first and foremost designed from an enterprise perspective that can be described as 
-            a holistic top-down logical model commonly refered to as <i>Entity Attribute Value</i> or EAV model. What this means is the 
-            model is created in a more abstract manner than one would likely see with a traditional <i>View Integration Model</i>. As a 
-            result, it allows you to sustain your data taxonomy from a holistic perspective that will provide maximum scalability and 
-            effeciency into your problem domain through natural software accreation and data federation.</p>
+            <p>The A2Z object model is first and foremost designed for an enterprise perspective that can be described as 
+            a holistic top-down logical model commonly refered to as <i>Entity Attribute Value</i> or EAV model. What this 
+            means is the model is created with a different, perhaps more abstract approach than one would likely encounter 
+            with a traditional <i>View Integration Model</i>. As a result, it allows you to sustain and build upon your 
+            domain taxonomy from a holistic perspective that will provide maximum scalability and effeciency into your 
+            problem domain through natural software accreation and data federation.</p>
 
             <p>The benefit of using this top-down approach is how well the model itself flexes toward your domain of interest without 
             the need for refactoring callstacks into data storage mediums because a column, table, property or new document was added 
@@ -121,7 +122,7 @@
         <div class="container" style="margin-top: 25px;">
             <h3>Characteristics of a View Integration Model</h3>
             <p>A2ZDB is different than a traditional "View Integration Model" or bottom-up relational model in a variety of ways. Most notable 
-            is the difference in how entities and attributes are described in relation to the data these entities contain.</p>
+            is the difference in how entities and attributes are described in relation to other entities as well as the data these entities contain.</p>
             <div class="row">
                 <div class="col">
                     <h4>Bottom-Up Object Model</h4>
@@ -132,9 +133,10 @@
                     <h4>View Integration Model</h4>
                     <ul style="margin-top: 25px;">
                         <li>Traditionally, the model's Tables and Columns describe themselves </li>
-                        <li>This same pattern exists with dimensional documents and properties. Technology and platform is irrelavant at this stage</li>
-                        <li>View models are traditionally highly constrained in favor project requirements and application fetures making it a real challenge to maintain parity with an enterprise vision.</li>
-                        <li>Susceptible to disparity due to re-engineering efforts</li>
+                        <li>This same pattern exists with dimensional documents and properties. At this stage, technology and storage platform is irrelavant.</li>
+                        <li>View models are traditionally highly constrained in favor of project requirements and application features. As a result, it can be a 
+                        real challenge trying to maintain parity with an enterprise vision.</li>
+                        <li>View models are susceptible to disparity due to re-engineering efforts and personnel change-over.</li>
                         <li>Change management can have a cascading effect on API call stacks as well as user interface &amp; experience. This is commonly seen when the effort to integrate a feature is greater than the feature being integrated.</li>
                         <li>DevOps sustainability can be greatly impacted over a life of your data's storage architecture</li>
                     </ul>                    
@@ -154,35 +156,40 @@
 
             <p>Before continuing any further, It is important to point out a few basic premises regarding object modeling.</p>
             <ul>
-                <li>There is no wrong way to model and right way to model per se. If your model returns accurate information, you did it right. If your model returns in-accurate information, this would suggest something was missed and could be very costly in the business decision making processes.</li>
-                <li>Varying degrees of EAV modeling does occur in view integration models and these efforts increase the sustainability of project's life span</li>
-                <li>Over time, if not properly planned, manged and maintained. A bottom up model can contain a variety of constraints, columns and relationships that get lost in translation as people and process are updated and replaced. These properties are usually ignored by developers for fear of regression.</li>
-                <li>Finally, the <i>View Integration Model</i> pattern can be difficult to abondoned due to conditioning, training and past project experiences. In fact, It can be so difficult, that the A2Z 
-                modeling principles do not completely abondon the concept.</li>
+                <li>There is no wrong way to model and right way to model per se. If your model returns accurate information, you did it right. 
+                If your model returns in-accurate information, this would suggest something was missed and could be very costly in the business 
+                decision making processes.</li>
+                <li>Varying degrees of EAV modeling does occur in view integration models and these efforts increase the sustainability of project's 
+                life span</li>
+                <li>Over time, if not properly planned, manged and maintained. A bottom up model can contain a variety of constraints, columns 
+                and relationships that get lost in translation as people and process are updated and replaced. These properties are usually 
+                ignored by developers for fear of regression.</li>
+                <li>Finally, the <i>View Integration Model</i> pattern can be difficult to abondoned due to cultural conditioning, training and 
+                past project experiences. In fact, It can be so difficult, that the A2Z modeling principles do not completely abondon the concept.</li>
             </ul>
             
-            <p>A2ZDB makes maximum use of effeciency and performance when designing a taxonomy namespace. Great care is given toward 
-            properly identifying the nature of not just the data being stored, but also the relationships within a domain of discourse 
-            this model facilitates and how it matches up to other kinds of data that have simalar attributes and characteristics.</p>
+            <p>A2ZDB makes maximum use of spatial effeciency and performance when designing a taxonomy namespace. Great care is given toward 
+            properly identifying the nature of not just the data being stored, but also the relationships within a domain of discourse and 
+            how it relates to accompanying taxonomys that have simalar attributes and relational characteristics.</p>
 
             <p>Ultimately the differences between these two methods of modeling is a red pill/blue pill argument. If you are considering 
             changing the way you isolate, partition and manage your enterprise data. The A2ZDB will provide you a tremendous springboard 
-            toward accomplishing your efforts.</p>
+            toward accomplishing these efforts.</p>
 
             <h3>History of this Model</h3>
             <p>Decades of effort has made this model quite complete in it's core form. More over, it is my experience 
             once developers learn and undertsand this holistic approach, they prefer developing under EAV based Semantic models over 
             "View Integration Models". The reason for this is because it is faster and easier to develop against and provides greater 
             opportunities for code reuse.</p>
-            <p>In addition to the physical characteristics of the model's themselves, decades of effort has gone into defining the metadata 
-            taxonomy that describes your valuable data assets. While this project is new, the defined and developed taxonomy is a mature, vast 
-            and growing <i>business computing</i> semantic and taxonomy infrastructure. This combined with managed metadata repository dependencies 
-            that allows the A2ZDB w/Arizona's architecture to stretch it's legs in both development and production environments. What this 
-            ultimately means is, refactoring storage structure (adding a table or a new column) for your business data becomes a very rare event 
-            in feature driven development. Originally - the A2ZDB consisted of 23 EAV Tables, that was almost 20 years ago. Today, the core 
-            database and composite architecture requires less than 50 tables. Less than 100% growth in entities in 20 years says something 
-            toward the legitamcy of flexibility this model has to offer. We understand this history is important in your decision making process. 
-            For additional historical information <a href="#">Click here</a>
+            <p>In addition to the physical characteristics of the model's themselves, decades of effort has gone into defining a scalable metadata 
+            taxonomy that describes your valuable data assets.  While this project is new, the defined and developed taxonomy is a mature, vast 
+            and growing <i>business computing</i> taxonomy infrastructure. This combined with managed metadata repository dependencies 
+            that allows the A2ZDB w/Arizona's architecture to stretch it's legs in both development and production environments.</p>
+            <p>What this ultimately means is, refactoring storage structure (adding a table or a new column) for your business data becomes a 
+            very rare event in feature driven development. Originally - the A2ZDB consisted of 23 EAV Tables, that was almost 20 years ago. 
+            Today, the core database and composite architecture requires less than 50 tables. Less than 100% growth in entities in 20 years 
+            says something toward the legitamcy of flexibility this model has to offer. I understand this history is important in your decision 
+            making process. For additional historical information <a href="#">Click here</a>
         </p>        
         </div>
         <div class="container" style="margin-top: 25px; margin-bottom: 20px;">

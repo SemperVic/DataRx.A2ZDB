@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-    <link rel="stylesheet" href="./bootstrap.min.css">
-    <link rel="stylesheet" href="./offcanvas.css">
+    <link rel="stylesheet" href="./assets/style/sandstone.bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/custom.styles.css">
     <title>A2ZDB.A2Z</title>
 </head>
-<body class="bg-light">
+<body>
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="./index.html">A2ZDB Docs</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,31 +42,28 @@
                         </div>
                     </li>
                 </ul>            
-            </div>
+            </div>            
         </div>
     </nav>
-
-    <div class="nav-scroller bg-white box-shadow">
-        
-        <div class="container">
-            <div class="row">
-                <nav class="nav nav-underline">
-                    <a class="nav-link active" href="./a2z.html">A2Z</a>
-                    <a class="nav-link" href="./a2z.cms.html">CMS</a>
-                    <a class="nav-link" href="./a2z.com.html">COM</a>
-                    <a class="nav-link" href="./a2z.dev.html">DEV</a>
-                    <a class="nav-link" href="./a2z.eav.html">EAV</a>
-                    <a class="nav-link" href="./a2z.geo.html">GEO</a>
-                    <a class="nav-link" href="./a2z.log.html">LOG</a>
-                    <a class="nav-link" href="./a2z.mdr.html">MDR</a>
-                    <a class="nav-link" href="./a2z.ops.html">OPS</a>
-                </nav>
-            </div>
-            
-        </div>
-    </div>
     
     <main role="main">
+        <div class="nav-scroller bg-white box-shadow">
+            <div class="container">
+                <div class="row">
+                    <nav class="nav nav-underline">
+                        <a class="nav-link active" href="./a2z.html">A2Z</a>
+                        <a class="nav-link" href="./a2z.cms.html">CMS</a>
+                        <a class="nav-link" href="./a2z.com.html">COM</a>
+                        <a class="nav-link" href="./a2z.dev.html">DEV</a>
+                        <a class="nav-link" href="./a2z.eav.html">EAV</a>
+                        <a class="nav-link" href="./a2z.geo.html">GEO</a>
+                        <a class="nav-link" href="./a2z.log.html">LOG</a>
+                        <a class="nav-link" href="./a2z.mdr.html">MDR</a>
+                        <a class="nav-link" href="./a2z.ops.html">OPS</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
         <div class="jumbotron">
             <div class="container">
                 <h1>A2Z: Arizona Object State Model</h1>
@@ -79,6 +76,7 @@
                     consequat enim, sit amet ullamcorper purus congue non.</small>
             </div>
         </div>
+        
         
         <div class="container">
             <div class="row">                                
@@ -123,19 +121,16 @@
             </div>
         </div>
     </main>
-
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">//a2zdb.io</span>
+        </div>
+    </footer>
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-    $(function () {
-        'use strict'
-        $('[data-toggle="offcanvas"]').on('click', function () {
-            $('.offcanvas-collapse').toggleClass('open')
-        })
-    })
-    </script>
+    
 
 </body>
 </html>

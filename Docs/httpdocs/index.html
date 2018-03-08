@@ -4,13 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-    <link rel="stylesheet" href="./bootstrap.min.css">
-    <link rel="stylesheet" href="./offcanvas.css">
+    <link rel="stylesheet" href="./assets/style/sandstone.bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/custom.styles.css">
     <title>A2ZDB Docs</title>
 </head>
-<body class="bg-light">
-
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="./index.html">A2ZDB Docs</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,6 +19,17 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="./index.html" style="margin-right: 10px;">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Getting Started</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="./modeling-principles.html">Intro to A2ZDB Object Modeling</a>
+                            <a class="dropdown-item" href="./integration-definition.html">Integration Definition Defined</a>
+                            <a class="dropdown-item" href="./naming-conventions.html">Naming Conventions</a>
+                            <a class="dropdown-item" href="./eav-modeling.html">Basic EAV Modeling</a>
+                            <a class="dropdown-item" href="./about-metadata.html">More On Metadata</a>
+                            <a class="dropdown-item" href="./semantic-modeling.html">Semantic Modeling</a>                            
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="objectModelOption" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core Object Models</a>
@@ -46,58 +56,60 @@
         </div>
     </nav>    
     <main role="main">
-        <div class="jumbotron">
-            <div class="container">
-                <h1 class="display-3">A2ZDB Integration Definition</h1>
-                <p>This documentation provides core integration definitions for a2zdb's information modeling (IDEF1X) standards</p>
-                <p><a class="btn btn-primary btn-lg" href="./integration-definition.html" role="button">Learn more &raquo;</a></p>
+                
+        <div class="jumbotron" style="border-bottom: 1px solid #dedede; margin-top: 40px;">
+            <div class="container" style="padding-top: 20px;">
+                <h1 class="display-3">A2ZDB Data Modelor's Guide</h1>
+                <p>The purpose of this guide is to familiarize you with the various taxonomies in the A2ZDB data layer.</p>
+                <p>As more models are added and additional documentation is procurred, this guide will be revised accordingly.</p>
+                <p><pre>Revision 1.1, March 2018</pre></p>
             </div>
         </div>
         
+        <div class="container" style="margin-bottom: 25px;">
+            <h2>Getting Started</h2>
+            <p>This data modelor's guide is divided into three core sections with a forth section dedicated to 
+            familiarizing yourself A2ZDB modelling principles. Regardless of your level of expertise, you 
+            are encouraged to review the <i>A2ZDB Object Modeling Overview</i> to get a feel for the modeling conventions 
+            A2Z uses. While the topic of data modeling can certainly be dry, It is imperitive you review this guide if 
+            you are preparing to interface with A2ZDB or perhaps even wish to extend it with your models.</p>
+            <a href="./modeling-principles.html" class="btn btn-secondary btn-lg">Lets Get Started</a>
+        </div>
+
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
+                    <h2>Core Object Models</h2>
+                    <p>The Core Object Model section will introduce you to the concrete object models that make up 
+                    the minimum requirements for an A2ZDB.</p>
+                </div>
+                <div class="col-md-4">
                     <h2>Semantic Modeling</h2>
-                    <p>Integration DEFinition for information modeling (IDEF1X) is a data modeling language 
-                    for the development of semantic data models. IDEF1X is used to produce a graphical 
-                    information model which represents the structure and semantics of information within an 
-                    environment or system.</p>
+                    <p>Need to come up with a concise description of what we mean</p>
                 </div>
                 <div class="col-md-4">
                     <h2>Data Storage Options</h2>
                     <p>A2ZDB supports both relational and/or dimensional storage strategies.</p>
-                    <ul>
-                        <li>MS SQL, MS SQL Express, SQLite 3, PostgreSQL, MySQL</li>
-                        <li>Mongo DB, CouchDB</li>
-                    </ul>
                 </div>
-                <div class="col-md-4">
-                    <h2>Object Modeling</h2>
-                    <p>The A2Z data model is first and foremost designed from an enterprise perspective that is a holistic top-down logical model. 
-                    What this means is the model is designed to satisfy identifiable and predictable "Real World" modelling patterns.</p>
-                </div>
+                
             </div>
             <div class="row">
-                <p class="col-md-4"><a class="btn btn-secondary" href="./idef.html" role="button" target="_blank">Learn More</a></p>
-                <p class="col-md-4"><a class="btn btn-secondary" href="./data-storage-best-practice.html" role="button">Learn More</a></p>
-                <p class="col-md-4"><a class="btn btn-secondary" href="./modeling-principles.html" role="button">Learn More</a></p>
+                <p class="col-md-4"><a class="btn btn-outline-secondary" href="./idef.html" role="button" target="_blank">Learn More</a></p>
+                <p class="col-md-4"><a class="btn btn-outline-secondary" href="./data-storage-best-practice.html" role="button">Learn More</a></p>
+                <p class="col-md-4"><a class="btn btn-outline-secondary" href="./modeling-principles.html" role="button">Learn More</a></p>
             </div>
         </div>
     </main>
-
-   
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">//a2zdb.io</span>
+        </div>
+    </footer>
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-    $(function () {
-        'use strict'
-        $('[data-toggle="offcanvas"]').on('click', function () {
-            $('.offcanvas-collapse').toggleClass('open')
-        })
-    })
-    </script>
+    
 
 </body>
 </html>
