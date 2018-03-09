@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="stylesheet" href="./assets/style/sandstone.bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/custom.styles.css">
+    <title>A2ZDB EAV Modeling</title>
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">A2ZDB Docs</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html" style="margin-right: 10px;">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Getting Started</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="./modeling-principles.html">Object Modeling</a>
+                            <a class="dropdown-item" href="./integration-definition.html">Integration Definition Defined</a>
+                            <a class="dropdown-item" href="./naming-conventions.html">Naming Conventions</a>
+                            <a class="dropdown-item" href="./eav-modeling.html">EAV Modeling</a>
+                            <a class="dropdown-item" href="./about-metadata.html">About Metadata</a>
+                            <a class="dropdown-item" href="./semantic-modeling.html">Semantic Modeling</a>                            
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="objectModelOption" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core Object Models</a>
+                        <div class="dropdown-menu" aria-labelledby="objectModelOption">
+                            <a class="dropdown-item" href="./a2z.html">A2Z - Arizona Object State Model</a>
+                            <a class="dropdown-item" href="./a2z.com.html">COM - Community Object Model</a>
+                            <a class="dropdown-item" href="./a2z.cms.html">CMS - Content Management System Model</a>
+                            <a class="dropdown-item" href="./a2z.dev.html">DEV - DevOps Object Model</a>
+                            <a class="dropdown-item" href="./a2z.log.html">LOG - Logging &amp; Archive Model</a>
+                            <a class="dropdown-item" href="./a2z.mdr.html">MDR - Metadata Repository Model</a>
+                            <a class="dropdown-item" href="./a2z.ops.html">OPS - Operations &amp; Management Model</a>
+                        </div>
+                    </li>
+                    <li class="nav-item  dropdown">
+                        <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data Storage Options</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="./relational-db-support.html">Relational Data Storage</a>
+                            <a class="dropdown-item" href="./dimensional-db-support.html">Document Data Storage</a>
+                            <a class="dropdown-item" href="./data-storage-best-practice.html">Hybrid Data Storage</a>
+                        </div>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+    </nav>    
+    <main role="main">
+        <div class="nav-scroller bg-white box-shadow">        
+            <div class="container">
+                <div class="row">
+                    <nav class="nav nav-underline">
+                        <a class="nav-link" href="./modeling-principles.html">Object Modeling</a>
+                        <a class="nav-link" href="./integration-definition.html">Integration Definition</a>
+                        <a class="nav-link" href="./naming-conventions.html">Naming Conventions</a>                        
+                        <a class="nav-link active" href="./eav-modeling.html">EAV Modeling</a>
+                        <a class="nav-link" href="./about-metadata.html">About Metadata</a>
+                        <a class="nav-link" href="./semantic-modeling.html">Semantic Modeling</a>
+                    </nav>
+                </div>    
+            </div>
+        </div>
+               
+        <div class="container" style="margin-top: 25px;">
+            <h3>Entity-Attribute-Value Modeling</h3>
+            <p>Today, there are several areas of concern when one discusses Integrated Definition Methods. IDEF is a group of modeling methods 
+            that can be used to describe operations in an IT enterprise. Initially abberviated as ICAM (<i>Integrated Computer Aided Manufacturing</i>) 
+            Definition in 1988, the ICAM definition was renamed in 1999 to IDEF. IDEF also refers to a family of modeling languages in the field 
+            of systems and software engineering. These languages cover a wide range of uses, from functional modeling to data, simulation, 
+            object-oriented analysis/design and knowledge acquisition.</p>
+
+            <p>A2ZDB uses a variety of IDEF methods but primary focus has been applied toward IDEF0 and IDEF1 or IDEF1X to be specific. IDEF0 is 
+            a <i>functional</i> modeling methodology for describing use case functionality. IDEF0 is built on the functional modeling language 
+            <a href="https://en.wikipedia.org/wiki/Structured_analysis_and_design_techni" target="_blank">Structured Analysis and Design 
+            Technique</a></p>
+
+            <p>Even more focus has been placed on IDEF1X. <a href="https://en.wikipedia.org/wiki/IDEF1X" target="_blank">IDEF1X</a> is a 
+            data modeling language for the development of semantic data models. IDEF1X permits the construction of semantic data models 
+            which may serve to support the management of data as a resource, the integration of information systems, and the building 
+            of information data storage models.</p>
+
+            <p>IDEF helps you model data in a standard, consistent and predictable manner in order to manage it as a resource. It can be 
+            used in projects requiring a standard means of defining and analyzing the data resources within an organization. Such projects 
+            include the incorporation of a data modeling technique into a methodology, managing data as a resource, integrating information 
+            systems, or designing computer databases. The primary objectives of the IDEF1X standard are to provide:</p>
+
+            <ul>
+                <li>Means for completely understanding and analyzing an organization's data resources</li>
+                <li>Common means of representing and communicating the complexity of data</li>
+                <li>A technique for presenting an overall view of the data required to run an enterprise</li>
+                <li>Means for defining an application-independent view of data which can be validated by users and transformed into a physical database design</li>
+                <li>A technique for deriving an integrated data definition from existing data resources.</li>
+            </ul>
+            
+            <p>The principal objective of IDEF1X is to support integration. The approach to integration focuses on the capture, management, 
+            and use of a single semantic definition of the data resource referred to as a "<i>conceptual schema</i>" in the industry and 
+            referred to as "<i>Taxonomy Namespace</i>" in Arizona's help documentation. The conceptual schema or taxonomy schema provides 
+            a single integrated definition of the data within an enterprise which is not biased toward any single application or tier of data 
+            and is independent of how the data is physically stored or accessed. The primary objective of this taxonomy schema is to provide 
+            a consistent definition of the meanings of and interrelationships between data that can be used to integrate, share, and manage 
+            the integrity of data. A taxonomy schema must have three important characteristics</p>
+            
+            <ul>
+                <li>Consistent with the infrastructure of the business and true across all application areas</li>
+                <li>Extendible, such that new data can be defined without altering previously defined data</li>
+                <li>Transformable to both the required user views and to a variety of data storage and access structures.</li>
+            </ul>
+
+            <h4>Additional Resources</h4>
+            <ul>
+                <li><a href="http://www.idef.com/idef1-information_modeling_method/" target="_blank">Integrated DEFinition Methods (IDEF)</a></li>
+                <li><a href="http://www.idef.com/idefo-function_modeling_method/" target="_target">IDEF0 Functional Modeling</a></li>
+                <li><a href="http://www.idef.com/idef1-information_modeling_method/" target="_blank">IDEF1 Information Modeling</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/IDEF#Overview_on_IDEF_Methods" target="_blank">Wikipedia > IDEF</a></li>
+            </ul>
+
+        </div>
+
+        
+
+        
+        <div class="container" style="margin-top: 35px; margin-bottom: 20px;">
+            <div class="row">
+                <div class="col"><a href="./modeling-principles.html" class="btn btn-outline-secondary" type="button">&laquo; Prev Topic: Object Modeling</a></div>
+                <div class="col"><a href="./naming-conventions.html" class="btn btn-outline-secondary float-right" type="button">Next Topic: Naming Conventions &raquo;</a></div>
+            </div>
+        </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+    $(function () {
+        'use strict'
+        $('[data-toggle="offcanvas"]').on('click', function () {
+            $('.offcanvas-collapse').toggleClass('open')
+        })
+    })
+    </script>
+
+</body>
+</html>
