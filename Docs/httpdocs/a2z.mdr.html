@@ -4,13 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-    <link rel="stylesheet" href="./bootstrap.min.css">
-    <link rel="stylesheet" href="./offcanvas.css">
+    <link rel="stylesheet" href="./assets/style/sandstone.bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/custom.styles.css">
     <title>A2ZDB.MDR</title>
 </head>
-<body class="bg-light">
-
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="./index.html">A2ZDB Docs</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,6 +19,17 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html" style="margin-right: 10px;">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Getting Started</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="./modeling-principles.html">Intro to A2ZDB Object Modeling</a>
+                            <a class="dropdown-item" href="./integration-definition.html">Integration Definition Defined</a>
+                            <a class="dropdown-item" href="./naming-conventions.html">Naming Conventions</a>
+                            <a class="dropdown-item" href="./eav-modeling.html">Basic EAV Modeling</a>
+                            <a class="dropdown-item" href="./about-metadata.html">More On Metadata</a>
+                            <a class="dropdown-item" href="./semantic-modeling.html">Semantic Modeling</a>                            
+                        </div>
                     </li>
                     <li class="nav-item  active dropdown">
                         <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="objectModelOption" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core Object Models</a>
@@ -70,13 +80,15 @@
         <div class="jumbotron">
             <div class="container">
                 <h1>MDR: Metadata Repository Object Model</h1>
-                <p>This documentation provides the standard core taxonomy for the Metadata Repository Object Model.</p>
-                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis iaculis massa, quis 
-                        finibus turpis accumsan sit amet. Vivamus nisi enim, scelerisque id velit vel, auctor sodales 
-                        diam. Donec eros tellus, scelerisque et venenatis eget, malesuada ut urna. Curabitur auctor ut 
-                        urna in pharetra. Cras non dolor nunc. Vivamus finibus, ipsum nec sodales luctus, nibh odio 
-                        luctus nisi, ac volutpat nisi urna eu magna. Curabitur viverra laoreet mattis. Vivamus molestie 
-                        consequat enim, sit amet ullamcorper purus congue non.</small>
+                <p>The Metadata Repository model is considered the A2Z foundation schema. Without metadata repositories, all the 
+                modeling patterns and supporting A2ZDB architecture in the world will not overcome the heavy dependency and reliance 
+                A2ZDB has . Remember, object models are described in the data themselves and do not have a database constraint or 
+                naming convention to fallback on for interpretation. The importance of A2ZDB Metadata cannot be overstated. 
+                <a href="#">Click here</a> to learn about metadata procurement</p> 
+                <div class="clearfix">
+                    <a href="./a2z.log.html" class="btn btn-secondary btn-sm float-left">LOG < Prev Model</a> 
+                    <a href="./a2z.ops.html" class="btn btn-secondary btn-sm float-right">Next Model > OPS</a> 
+                </div>
             </div>
         </div>
         
@@ -134,20 +146,16 @@
             </div>
         </div>
     </main>
-
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">//a2zdb.io</span>
+        </div>
+    </footer>
               
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-    $(function () {
-        'use strict'
-        $('[data-toggle="offcanvas"]').on('click', function () {
-            $('.offcanvas-collapse').toggleClass('open')
-        })
-    })
-    </script>
-
+    
 </body>
 </html>

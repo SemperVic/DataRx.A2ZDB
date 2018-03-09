@@ -21,6 +21,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html" style="margin-right: 10px;">Home <span class="sr-only">(current)</span></a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Getting Started</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="./modeling-principles.html">Intro to A2ZDB Object Modeling</a>
+                            <a class="dropdown-item" href="./integration-definition.html">Integration Definition Defined</a>
+                            <a class="dropdown-item" href="./naming-conventions.html">Naming Conventions</a>
+                            <a class="dropdown-item" href="./eav-modeling.html">Basic EAV Modeling</a>
+                            <a class="dropdown-item" href="./about-metadata.html">More On Metadata</a>
+                            <a class="dropdown-item" href="./semantic-modeling.html">Semantic Modeling</a>                            
+                        </div>
+                    </li>
                     <li class="nav-item  active dropdown">
                         <a class="nav-link dropdown-toggle"  style="margin-right: 10px;" href="#" id="objectModelOption" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core Object Models</a>
                         <div class="dropdown-menu" aria-labelledby="objectModelOption">
@@ -67,13 +78,14 @@
         <div class="jumbotron">
             <div class="container">
                 <h1>A2Z: Arizona Object State Model</h1>
-                <p>This documentation provides the standard core taxonomy for the Arizona object state model.</p>
-                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis iaculis massa, quis 
-                    finibus turpis accumsan sit amet. Vivamus nisi enim, scelerisque id velit vel, auctor sodales 
-                    diam. Donec eros tellus, scelerisque et venenatis eget, malesuada ut urna. Curabitur auctor ut 
-                    urna in pharetra. Cras non dolor nunc. Vivamus finibus, ipsum nec sodales luctus, nibh odio 
-                    luctus nisi, ac volutpat nisi urna eu magna. Curabitur viverra laoreet mattis. Vivamus molestie 
-                    consequat enim, sit amet ullamcorper purus congue non.</small>
+                <p>The A2Z taxonomy schema is dedicated to supporting Arizona's infrastructure and run-time 
+                frameworks. While you are certainly welcome to extend this namespace, there is another 
+                extended Object State Model called OSM for this very purpose. The only difference between 
+                the two schemas is A2Z is dedicated to performing Arizona runtime operations.</p> 
+                <div class="clearfix">
+                    <a href="#" class="btn btn-secondary btn-sm float-left disabled">&laquo; Prev Model</a> 
+                    <a href="./a2z.cms.html" class="btn btn-secondary btn-sm float-right">Next Model &raquo;</a> 
+                </div>
             </div>
         </div>
         
