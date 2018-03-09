@@ -28,7 +28,7 @@
                             <a class="dropdown-item" href="./integration-definition.html">Integration Definition Defined</a>
                             <a class="dropdown-item" href="./naming-conventions.html">Naming Conventions</a>
                             <a class="dropdown-item" href="./eav-modeling.html">EAV Modeling</a>
-                            <a class="dropdown-item" href="./about-metadata.html">About Metadata</a>
+                            <a class="dropdown-item" href="./about-metadata.html">A2Z On Metadata</a>
                             <a class="dropdown-item" href="./semantic-modeling.html">Semantic Modeling</a>                            
                         </div>
                     </li>
@@ -65,7 +65,7 @@
                         <a class="nav-link" href="./integration-definition.html">Integration Definition</a>
                         <a class="nav-link" href="./naming-conventions.html">Naming Conventions</a>                        
                         <a class="nav-link" href="./eav-modeling.html">EAV Modeling</a>
-                        <a class="nav-link" href="./about-metadata.html">About Metadata</a>
+                        <a class="nav-link" href="./about-metadata.html">A2Z On Metadata</a>
                         <a class="nav-link" href="./semantic-modeling.html">Semantic Modeling</a>
                     </nav>
                 </div>    
@@ -114,9 +114,11 @@
             makes it easy to store any sparse matrix or composite object to the model maximizing code reuse. Another benift this technique 
             provides is the ability to identify trending data sets.</p>
             <p>Conversely, this strategy requires you to manage relationships via standardized taxonomy and metadata repositories in-lieu 
-            of traditional relational constraints as is the case in a bottom-up model. Ultimately this top-down EAV modeling strategy inherits 
-            an abstract nature to the naming convention and normalization techniques. This, combined with logical relational forms compared 
-            to a constrained relational object model as typically demonstratred with view integration models.</p>
+            of traditional relational constraints as is the case in a bottom-up model. Lastly, this top-down EAV modeling strategy does 
+            have a tendency to inherit an abstract nature to the naming convention and normalization techniques. This, combined with logical 
+            relational forms will require developers who are not familiar with these patterns and techniques to make the appropriate mental 
+            adjustments in how they interact with A2Z's object persistence. In my experiencee, ramp up time usually requires about two weeks 
+            working with the model for entry level software developer's who have some experience with data transactions in the web tier.</p>
         </div>
 
         <div class="container" style="margin-top: 25px;">
@@ -133,29 +135,36 @@
                     <h4>View Integration Model</h4>
                     <ul style="margin-top: 25px;">
                         <li>Traditionally, the model's Tables and Columns describe themselves </li>
-                        <li>This same pattern exists with dimensional documents and properties. At this stage, technology and storage platform is irrelavant.</li>
-                        <li>View models are traditionally highly constrained in favor of project requirements and application features. As a result, it can be a 
+                        <li>This same pattern exists with dimensional documents and properties. At this stage, 
+                        technology and storage platform is irrelavant.</li>
+                        <li>View models are traditionally highly constrained in favor of project requirements 
+                        and application features. As a result, it can be a 
                         real challenge trying to maintain parity with an enterprise vision.</li>
-                        <li>View models are susceptible to disparity due to re-engineering efforts and personnel change-over.</li>
-                        <li>Change management can have a cascading effect on API call stacks as well as user interface &amp; experience. This is commonly seen when the effort to integrate a feature is greater than the feature being integrated.</li>
-                        <li>DevOps sustainability can be greatly impacted over a life of your data's storage architecture</li>
+                        <li>View models are susceptible to disparity due to re-engineering efforts and 
+                        personnel change-over.</li>
+                        <li>Change management can have a cascading effect on API call stacks as well as user 
+                        interface &amp; experience. This is commonly seen when the effort to integrate a 
+                        feature is greater than the feature being integrated.</li>
+                        <li>DevOps sustainability can be greatly impacted over a life of your data's storage 
+                        architecture if proper planning is not applied to how you store and access your second most valuble asset. People being the first.</li>
                     </ul>                    
                 </div>                
             </div>
         </div>
 
         <div class="container" style="margin-top: 25px;">
-            <h3>Finding Balance</h3>
+            <h3>Consolidated EAV View Integration Model.</h3>
             <p>In looking at the two model's illustrated above. Theoretically, One could store the information from the View Integration 
             Model into the top-down EAV model but the process would require an abstract layer of recursion. This is not the sweet spot you 
             want to perform development operations. Obviously this would not only require a lot development cycles, but would be complicated 
             to change. Accordingly, a great deal of effort has gone into striving to find that balance between an EAV semantic model and a 
             view integration model for maximum sustainablity, usability, scalability and performance. This unification between the traditional 
-            view model and and holistic enterprise model is what A2ZDB strives to meet through what is refered to as a consolidated EAV 
-            integration model. You will learn more about these concrete models when you learn about the <a href="#">Core Object Models</a></p>
+            view model and and holistic enterprise model is what A2ZDB strives to meet through what I refered to as a consolidated EAV 
+            view integration model. You will learn more about these concrete models when you review the <a href="#">Core Object Models</a>. 
+            Colloquially, this model can loosley be described an object oriented data model in relational form.</p>
 
             <p>Before continuing any further, It is important to point out a few basic premises regarding object modeling.</p>
-            <ul>
+            <ol>
                 <li>There is no wrong way to model and right way to model per se. If your model returns accurate information, you did it right. 
                 If your model returns in-accurate information, this would suggest something was missed and could be very costly in the business 
                 decision making processes.</li>
@@ -164,17 +173,48 @@
                 <li>Over time, if not properly planned, manged and maintained. A bottom up model can contain a variety of constraints, columns 
                 and relationships that get lost in translation as people and process are updated and replaced. These properties are usually 
                 ignored by developers for fear of regression.</li>
-                <li>Finally, the <i>View Integration Model</i> pattern can be difficult to abondoned due to cultural conditioning, training and 
-                past project experiences. In fact, It can be so difficult, that the A2Z modeling principles do not completely abondon the concept.</li>
-            </ul>
-            
-            <p>A2ZDB makes maximum use of spatial effeciency and performance when designing a taxonomy namespace. Great care is given toward 
+                <li>Finally, the View Integration Model can be difficult to abondoned due to cultural conditioning, training and past project 
+                experiences. In fact, It can be so difficult, that the A2Z modeling principles do not completely abondon the concept.</li>
+            </ol>
+            <h5>Sparse Matrix</h5>
+            <p>A2ZDB makes maximum use of spatial effeciency and performance when designing a taxonomy schema. Great care is given toward 
             properly identifying the nature of not just the data being stored, but also the relationships within a domain of discourse and 
-            how it relates to accompanying taxonomys that have simalar attributes and relational characteristics.</p>
+            how it relates to accompanying taxonomys that have simalar attributes and relational characteristics. The differences between 
+            these two methods of modeling is a red pill/blue pill argument. If you are new to modeling or perhaps you are a veteran 
+            developer considering new ways to  isolate, partition and manage your enterprise data. The A2ZDB will provide you a tremendous 
+            springboard toward accomplishing these efforts.</p>
+        </div>
 
-            <p>Ultimately the differences between these two methods of modeling is a red pill/blue pill argument. If you are considering 
-            changing the way you isolate, partition and manage your enterprise data. The A2ZDB will provide you a tremendous springboard 
-            toward accomplishing these efforts.</p>
+        <div class="container" style="margin-top: 25px;">
+            <h3>Schools of Thought</h3>
+            <p>The are two major schools of thought when it comes to the strategies DevOps teams apply to data. Likewise, there are 
+            a lot of sub-schools of thought on both sides of the isle. In data architecture parlence, on the one hand there is a camp 
+            that believes the object model is king of the hill. How data is actually stored and organized in the database is not a 
+            super high priority. Depending on the degree this architecture is implemeted, it has been my experience with this pattern, 
+            the relational database is treated like someone might manage there own file system. Heavy drill down dependency 
+            is placed on traditional object relational mapping techniques like Entity Framework, JDO or Hibernate API protocols 
+            to drill through the aggregate.</p> 
+            
+            <h5>Object Model is King?</h5>
+            <p>In truth, there is actually something to be said with this argument. So much so - many DevOps teams have completely moved 
+            off this relational database paradigm all together and is now storing serialized composite objects in a document database. 
+            This architecture offers tremendous return on data portability and scalability and completely removes the ORM problem domain 
+            altogether. Out of sight, out of mind.  But what about all the advantages the very powerfull relational database has to offer?</p>
+            
+            <h5>Relational Data Model Is King?</h5>
+            <p>In the other camp, the object model is not king of the hill. The object model is simply a way to reflect data in a proper 
+            context and should not be soley constrained or driven through non-technical market intrest. While this is certainly a valid 
+            argument, it does not address why the relational model is king of the hill. The relational database is a very powerful tool 
+            when properly used. The reason this camp even exists is because it has tenure. Just because data architecture is trending in 
+            other directions, does not mean the relational database platform is deprecated or somehow going away. Database document 
+            platform technologies have along way to go before they can fill the gaps relational models do much better than aggregate 
+            models.</p>
+            
+            <h3>Finding Balance</h3>
+            <p>As a profesisonal data modelor, if I could offer you one piece of advice toward expanding your career path it would be this. 
+            Don't put a dog in this fight -- because you don't have to pick a side. Both platforms offer tremendous opportunity and scalabity. 
+            The are very powerful features both platforms have to offer. It is in this spirit A2ZDB's architecture encourages you to uses 
+            both when and where warranted.</p> 
 
             <h3>History of this Model</h3>
             <p>Decades of effort has made this model quite complete in it's core form. More over, it is my experience 
@@ -192,24 +232,54 @@
             making process. For additional historical information <a href="#">Click here</a>
         </p>        
         </div>
-        <div class="container" style="margin-top: 25px; margin-bottom: 20px;">
+    </main>
+    
+    <footer class="footer" style="border-top: 1px solid #dddddd;">
+        <div class="container">
             <div class="row">
-                <div class="col"><!--<a href="#" class="btn btn-outline-secondary" type="button">Prev: Home</a>--></div>
-                <div class="col"><a href="./integration-definition.html" class="btn btn-outline-secondary float-right" type="button">Next Topic: Integration Definition &raquo;</a></div>
+                <div class="col-md-12" style="padding-top: 10px;">
+                    <a href="./index.html" class="btn btn-secondary float-left">Go Home</a>
+                    <a href="./integration-definition.html" class="btn btn-outline-secondary float-right">Next Topic: Integration Definition</a>
+                </div>
+                
             </div>
         </div>
-    
+    </footer>
+
+<!--
+<p>Truth be told - in my heart, I belong to this camp for a number of reasons. My biggest reason has to do with my unique 
+            experience in this field and the incredible mentorship I was offered early in my career from some of the top relational 
+            data modelors in the world and they guided me into the light. This mentorship explained the big picture and taught me to 
+            unlearn my natural orthadoxy to describe my data with database constraints. Since then, I have been learning, expanding 
+            the evolution of the model and successfully applying and improving upon these priniples ever since.</p>
+            
+            The truth of the matter is, the problem is not with 
+            the relational database platform. The problem is the relational model is not designed in an effecient way because the 
+            industry lost something very special that previously mitigated these problems from occuring in the past. All the developer had 
+            to do was write the proper query or the DBA/DBM would give it to them in the form of a view or stored procedure. If you 
+            have more interest in this subject area, I encourage you to read "<i>The Problematic Data Model</i>"</p>
+            
+
+            <p>As I see it - the problem started at least 30 years ago. Early in my career there was a common job position or role that 
+            database administrators or DBA worked along side called a database modelor or DBM. Over the course of about 10 years this 
+            discipline and employment role was phased out and diminished considerably. To fill the gap, software developers took over 
+            the role. While I am not implying a software developer makes a lousy data modelor, what I am suggesting is that most software 
+            developers do not place as much effort in planning and designing big picture or enterprise class data models as they do compared 
+            to what they are programming. This is the developers bread and butter. Relational data modeling in this space is  Since then the 
+            quality and planning put into the relational database layer has diminished 
+            considerably and explains why the "Object Model Is King" camp removed the bottle neck. In short, the problem is not with the 
+            relational database architecture. The problem is feature driven data modeling leads to poor database modeling leads to 
+            unstastainability, which leads to performance issues which leads to regression and degradation.  
+        </p>
+            
+            that eis irrelavant at varying 
+            degrees so long as the data in the model can be properly and accuately marshalled. In the other camp With that said, the design approach for the A2ZDB model.
+            </p>
+
+        -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-    $(function () {
-        'use strict'
-        $('[data-toggle="offcanvas"]').on('click', function () {
-            $('.offcanvas-collapse').toggleClass('open')
-        })
-    })
-    </script>
-
+    
 </body>
 </html>
